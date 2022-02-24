@@ -1,0 +1,877 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2? family = Stick + No + Bills & display = swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  background-color: #4d2639;
+}
+
+header {
+  width: 100%;
+}
+
+footer{
+  
+  text-align: center;
+  color: #ecc8d3;
+  margin: 1%;
+  
+}
+
+
+
+.header .main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navbar {
+  margin-top: 30px;
+}
+
+.navbar .brand {
+  display: flex;
+  margin: 20px 70px;
+  color: #e42961;
+}
+
+.navbar .brand i {
+  padding-right: 1%;
+  font-size: 1.6em;
+}
+
+.navbar .brand h3 {
+  font-size: 1.3em;
+  margin: 5px 5px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: -50px 20px;
+}
+
+.menu ul li {
+  list-style: none;
+  margin-right: 70px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.menu ul li a:hover {
+  color: #ecc8d3;
+  font-size: 40px;
+  text-align: center;
+}
+
+.navbar .toggle-menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.navbar .toggle-menu i {
+  font-size: 1.8em;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.container-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container-info h1 {
+  font-size: 3em;
+  font-family: "Permanent Marker", cursive;
+  animation: left-move 1s ease-in;
+}
+
+.container-info h2 {
+  font-size: 2em;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 100;
+  animation: right-move 1s ease-in;
+}
+
+.container-info .btn {
+  font-size: 1.5em;
+  width: 300px;
+  margin-top: 5%;
+  margin-left: 15%;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #e42961;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 100;
+  border: none;
+  color: #fff;
+  animation: right-move 1s ease-in;
+}
+
+.img-content {
+  margin-top: 5%;
+  margin-bottom: 6%;
+  width: 30rem;
+}
+
+.container-info .img-content img {
+  max-width: 100%;
+  width: 40rem;
+  animation: up-move 1s ease-in;
+}
+
+.container-info .img-content img:hover {
+  filter: grayscale(80%);
+}
+
+.container-info .social-content li {
+  list-style: none;
+  margin: 30px;
+  animation: left-move 1s ease-in;
+}
+
+.container-info .social-content i {
+  font-size: 1.3em;
+  color: #e42961;
+}
+
+.container-info .social-content i:hover {
+  transform: scale(1.5);
+}
+
+header .wave {
+  margin-top: -100px;
+}
+
+.our-products {
+  background-color: #fff;
+  height: 100vh;
+}
+
+@media (max-width: 570px) {
+  .navbar .brand i {
+    margin-left: -30px;
+  }
+
+  .navbar .toggle-menu i {
+    display: block;
+    margin: -60px 30px;
+  }
+
+  .navbar .menu ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #e42961;
+    
+    position: fixed;
+    margin-top: 30px;
+    transform: translateX(-120%);
+    transition: 1s ease-in;
+  }
+
+  .navbar .menu .menu-on {
+    transform: translateX(-4%);
+  }
+
+  .navbar .menu ul li {
+    margin: 30px;
+    text-transform: uppercase;
+  }
+
+  .container-info .social-content i {
+    display: none;
+  }
+
+  .container-info {
+    flex-wrap: wrap-reverse;
+    margin: -50px 50px;
+  }
+
+  .container-info h1 {
+    font-size: 3em;
+    margin-top: -60px;
+  }
+  .container-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .container-info .img-content img {
+    margin-top: 60px;
+    max-width: 100%;
+    width: 24rem;
+    margin-bottom: 10%;
+    animation: up-move 1s ease-in;
+  }
+
+  header .wave {
+    margin-top: 100px;
+  }
+}
+
+@keyframes left-move {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes right-move {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes up-move {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.products-section {
+  background-color: #fff;
+  padding-bottom: 2%;
+}
+.products-section .wrapper {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 60px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product-card {
+  grid-column-start: span 1;
+  display: grid;
+  grid-template-rows: 240px auto auto;
+  grid-gap: 16px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product-category {
+  color: #86364ed3;
+  font-size: 12px;
+  font-weight: bold;
+}
+.product-name {
+  color: #e42961;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.product-description {
+  color: #b33773;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  line-height: 1.3rem;
+}
+
+.product-rating {
+  color: #e42961;
+  font-weight: bold;
+}
+.product-review {
+  font-size: 13px;
+  color: #86364ed3;
+  margin-top: 4px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-wrapper a {
+  background-color: #86364ed3;
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Fira Sans";
+  max-width: 160px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+}
+
+#cod {
+  background-color: #86364ed3;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Fira Sans";
+  max-width: 160px;
+  height: 3em;
+  width: 100%;
+  padding-top: 3%;
+}
+
+#lol {
+  background-color: #86364ed3;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Fira Sans";
+  max-width: 160px;
+  height: 3em;
+  width: 100%;
+  padding-top: 7%;
+}
+
+#val {
+  background-color: #86364ed3;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Fira Sans";
+  max-width: 160px;
+  height: 3em;
+  width: 100%;
+  padding-top: 7%;
+}
+
+#ff {
+  background-color: #86364ed3;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Fira Sans";
+  max-width: 160px;
+  height: 3em;
+  width: 100%;
+  padding-top: 7%;
+}
+
+.container-info .main-info-jugadores h1 {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Permanent Marker", cursive;
+  animation: left-move 1s ease-in;
+}
+
+.container-info .main-info-jugadores h2 {
+  font-size: 1.5em;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 100;
+  animation: right-move 1s ease-in;
+  text-align: center;
+}
+.container-info .main-info-torneo h1 {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Permanent Marker", cursive;
+  animation: left-move 1s ease-in;
+}
+
+.container-info .main-info-torneo h2 {
+  font-size: 1.5em;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 100;
+  animation: right-move 1s ease-in;
+  text-align: center;
+  padding-right: 2%;
+}
+.container-info .main-info-form h1 {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Permanent Marker", cursive;
+  animation: left-move 1s ease-in;
+}
+
+.container-info .main-info-form h2 {
+  font-size: 1.5em;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 100;
+  animation: right-move 1s ease-in;
+  text-align: center;
+  padding-right: 2%;
+}
+.products-section form {
+  text-align: center;
+  color: #4d2639;
+  font-size: 1.8em;
+  font-weight: 300;
+  font-family: "Stick No Bills", sans-serif;
+  border-radius: 5px;
+  padding: 15%;
+  padding-top: 0;
+  
+}
+
+.products-section form input {
+  background: #ecc8d3;
+  border: 1px solid #ecc8d3;
+  color: #4d2639;
+  font-size: 0.9em;
+  font-family: "Stick No Bills", sans-serif;
+  border-radius: 5px;
+  width: 500px;
+  height: 50px;
+  cursor: pointer;
+  margin-bottom: 1%;
+  text-align: center;
+
+}
+.products-section form textarea {
+  background: #ecc8d3;
+  border: 1px solid #ecc8d3;
+  border-radius: 5px;
+  width: 500px;
+  height: 200px;
+  cursor: pointer;
+  margin-bottom: 1%;
+  
+}
+
+
+
+#group{
+  color: #4d2639;
+  background: #ecc8d3;
+  border: 1px solid #ecc8d3;
+  width: 500px;
+  height: 35px;
+  border-radius: 5px;
+  font-family: "Stick No Bills", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 1%;
+}
+
+
+
+/* lista */
+
+div.body{
+  width: 108rem;
+  min-height: 100px;
+  
+  
+}
+
+div.subapartado{
+  width: 119rem;
+  min-height: 60px;
+  background: #f2d9e0;
+  
+  
+}
+
+div.titulo{
+  display: flex;
+  width: 119rem;
+  height: 60px;
+  background: #ecc8d3c1;
+  font-size: 3em;
+  border: 1px dashed #4d2639;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 1%;
+  cursor: pointer;
+
+
+}
+
+
+
+
+p.title-game{
+  margin-bottom: 33%;
+  font-size: 30px;
+  color: #76455d;
+}
+
+
+p.vj{
+  margin-left: 10%;
+}
+p.listName{
+  margin-left: 2%;
+  color: #4d2639;
+}
+
+div.cont-btns{
+  display: flex;
+  margin-right: 28%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+  
+ul.list-coment{
+  margin-left: 20%;
+  list-style:georgian;
+  color: #76455d;
+  width: 500px;
+  
+}
+
+
+div.info-list{
+  display: flex;
+  width: 90rem;
+  height: 0px;
+  overflow: hidden;
+  margin-left: 3%;
+  font-size: 1.3em;
+}
+ul.list-jugador{
+  margin-left: 20%;
+  list-style:georgian;
+  color: #76455d;
+  
+}
+
+p.title-coment {
+  margin-bottom: 3%;
+  font-size: 30px;
+}
+
+
+ul.list-one{
+  margin-left: 5%;
+  list-style:georgian;
+  color: #76455d;
+}
+
+div.compra-listas-p{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6%;
+ 
+}
+.compra-listas-p button{
+  color: white;
+  background: orangered;
+  border: 1px solid orangered;
+  border-radius: 5%;
+  width: 100px;
+  height: 30px;  
+  position: relative;
+  bottom: 25%; 
+  
+}
+
+.compra-listas-p h6{
+  font-size: 20px;  
+  position: relative;
+  bottom: 20%;
+  
+}
+
+.compra-listas-p h5{
+  position: relative;
+  font-size: 20px; 
+  top: 10%;
+  
+}
+
+.info-cont-product{
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  align-items: center;
+  
+  width: 180px;
+  height: 170px;
+  
+}
+
+
+div.subapartado:hover div.info-list{
+  height: 200px;
+}
+
+.torneos {
+  background: white;
+  padding-bottom: 5%;
+  padding-left: 25%;
+  
+}
+
+/*formulario*/
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+}
+
+.formulario__label{
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+  right: 10%;
+}
+
+.formulario__grupo-input{
+  position: relative;
+}
+
+.formulario__input{
+  width: 100%;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 18px;
+  transition: .3s ease all;
+}
+
+.formulario__input:focus{
+  border: 3px solid #0075ff;
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formulario__input-error{
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario__input-error-activo{
+  display: block;
+}
+
+.formulario__validacion-estado{
+  position: absolute;
+    right: 30px;
+    bottom: 18px;
+    z-index: 100;
+    font-size: 26px;
+    opacity: 0;
+}
+
+.formulario__checkbox{
+  margin-right: 5px;
+  font-size: 10px !important;
+  
+
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar,
+#grupo__mensaje {
+  grid-column: span 2;
+}
+
+.formulario__mensaje{
+  height: 45px;
+  line-height: 45px;
+  background: #f66868;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
+}
+
+.formulario__mensaje-activo{
+  display: block;
+}
+
+.formulario__mensaje p{
+  margin: 0;
+}
+
+.formulario__grupo-btn-enviar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.formulario__btn{
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  font-weight: bold;
+  border: none;
+  background: #4d2639;
+  color: #ecc8d3c1;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .1s ease all;
+  
+}
+.formulario__grupo-btn-enviar{
+  padding-bottom: 1%;
+}
+.formulario__btn:hover{
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.formulario__mensaje-exito {
+  font-size: 14px;
+  color: #4d2639;
+  display: none;
+}
+
+.formulario__mensaje-exito-activo{
+  display: block;
+  font-size: 20px;
+  margin-top: 3%;
+}
+.formulario__grupo-correcto 
+.formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__label {
+  color: #bb2929;
+
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+  color: #bb2929;
+  opacity: 1;
+
+}
+.formulario__grupo-incorrecto .formulario__input{
+  border: 3px solid #bb2929;
+}
+
+@media screen and (max-width: 800px){
+  .formulario{
+    display: block;
+    grid-template-columns: 1fr ;
+    
+  }
+  .formulario__grupo-terminos, 
+  .formulario__mensaje,
+  .formulario__grupo-btn-enviar{
+    grid-column: 1;
+  }
+
+  .formulario__btn{
+    width: 100%;
+  }
+ 
+  .products-section form {
+    text-align: center;
+    color: #4d2639;
+    font-size: 1.8em;
+    font-weight: 300;
+    font-family: "Stick No Bills", sans-serif;
+    border-radius: 5px;
+    padding: 5%;
+    padding-top: 0;
+}
+.formulario__check {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-left: 5% !important;
+  width: 100%;
+}
+img.img {
+  width: 528px !important;
+}
+
+
+.torneos {
+    background: white;
+    padding-bottom: 5%;
+    padding-left: 3%;
+}
+}
+
+
+#grupo__mensaje{
+  width: 100%;
+  
+}
+input#mensaje {
+  height: 300px;
+}
+
+#grupo__terminos {
+  
+  
+  color: #76455d;
+  font-size: 15px;
+  padding-bottom: 10%;
+}
+
+input#terminos {
+ 
+  width: 16px ;
+  
+}
+
+.formulario__check {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-left: 60%;
+  width: 100%;
+}
